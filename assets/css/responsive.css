@@ -179,6 +179,21 @@
         font-weight: 700;
     }
 
+    .apply-content-all {
+        display: block;
+    }
+
+    .apply-content-left, .apply-content-right {
+        padding: 6rem 6rem 8.5rem 6rem;
+    }
+
+    /* .apply-content {
+        padding: 5rem 1.5rem 0;
+    } */
+
+    .apply-content-left {
+        margin-bottom: 3rem;
+    }
 
 }
 
@@ -348,6 +363,22 @@
     }
     .content-right-event > a {
         font-weight: 700;
+    }
+
+    .apply-content-all {
+        display: block;
+    }
+
+    .apply-content-left, .apply-content-right {
+        padding: 2.5rem 2.5rem 4.5rem 2.5rem;
+    }
+
+    .apply-contents {
+        padding: 5rem 1.5rem 0;
+    }
+
+    .apply-content-left {
+        margin-bottom: 3rem;
     }
 }
 

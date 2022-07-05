@@ -655,6 +655,7 @@
     margin-bottom: 0;
     color: #23252a;
     line-height: 2.88rem;
+    transition: .3s;
 }
 
 .content-right-event > span {
@@ -669,7 +670,35 @@
     margin-right: 1rem;
 }
 
+.content-left-btn-element > a:hover {
+    background-color: var(--main-color-first);
+    color: #fff;
+}
 
+.content-left-btn-element > a {
+    background-color: var(--main-color-second);
+    transition: .3s;
+}
+
+.apply-content-all {
+    display: flex;
+    max-width: 114rem;
+   
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.apply-content-left,  .apply-content-right{
+    padding: 6rem 6rem 7rem 6rem;
+}
+
+.apply-content-left {
+    background-color: var(--main-color-first);
+}
+
+.apply-content-right {
+    background-color: #092e56;
+}
 
 .active-slider {
     display: block !important;
@@ -677,7 +706,36 @@
 .active-remove {
     display: none !important;
 }
+.apply-shared-css >.apply-title > p {
+    margin: 0 0 3.7rem 0;
+    color: #fff;
+    font-family: "Montserrat",Sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+}
+.apply-shared-css > .apply-content {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.6rem;
+    margin-bottom: 6rem;
+}
 
+.apply-shared-css > .apply-btn > a {
+    font-family: "Montserrat",Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    fill: #07294d;
+    color: #07294d;
+    background-color: #ffc600;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ffc600;
+    padding: 16px 32px;
+    border-radius: .4rem;
+}
 
 @keyframes nav-animation {
     from {
