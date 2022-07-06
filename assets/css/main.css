@@ -406,6 +406,7 @@
 
 .content-elements {
     display: flex;
+    justify-content: space-between;
     max-width: 114rem;
     margin-left: auto;
     margin-right: auto;
@@ -421,6 +422,7 @@
 
 .content-right {
     display: flex;
+    justify-content: end;
     align-items: center;
     align-content: center;
     padding-left: 2rem;
@@ -644,7 +646,9 @@
     padding: 3rem 0;
     border-bottom: .1rem solid #cecece;
 }
-
+.apply-contents {
+    padding-bottom: 12rem;
+}
 .content-right-event > a {
     display: block;
     font-family: "Montserrat",Sans-serif;
@@ -657,7 +661,9 @@
     line-height: 2.88rem;
     transition: .3s;
 }
-
+.content-right-event > a:hover {
+    color: var(--main-color-second);
+}
 .content-right-event > span {
     font-size: 1.5rem;
     color: #8a8a8a;
