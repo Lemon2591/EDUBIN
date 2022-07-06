@@ -115,9 +115,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: false,
     prevArrow:
-      "<button type='button' class='custom-slick-pre'><i class='ti-angle-left' aria-hidden='true'></i></button>",
+      "<button type='button' class='custom-slick-pre-coures'><i class='ti-angle-left' aria-hidden='true'></i></button>",
     nextArrow:
-      "<button type='button' class='custom-slick-next'><i class='ti-angle-right' aria-hidden='true'></i></button>",
+      "<button type='button' class='custom-slick-next-course'><i class='ti-angle-right' aria-hidden='true'></i></button>",
     responsive: [
       {
         breakpoint: 1024,

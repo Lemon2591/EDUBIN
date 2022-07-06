@@ -801,7 +801,7 @@
     font-weight: 700;
     line-height: 5.8rem;
     margin: 0;
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
     padding-bottom: 4rem;
     color: #23252a;
 }
@@ -1046,4 +1046,41 @@
 
 .set-bg-color5 {
     background-color: #009688;
+}
+
+
+.custom-slick-pre-coures {
+    right: 6rem;
+    font-size: 1.8rem;
+    line-height: 0;
+    position: absolute;
+    top: -18%;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    color: #000;
+    height: 4rem;
+    width: 4rem;
+    border: .2rem solid #aaa;
+    background: none;
+    border-radius: .3rem;
+}
+
+.custom-slick-next-course {
+    right: 1rem;
+    font-size: 1.8rem;
+    line-height: 0;
+    position: absolute;
+    top: -18%;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    color: #000;
+    height: 4rem;
+    width: 4rem;
+    border: .2rem solid #aaa;
+    background: none;
+    border-radius: .3rem;
 }
