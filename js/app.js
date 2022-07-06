@@ -108,3 +108,45 @@ $(document).ready(function () {
     ],
   });
 });
+
+$(document).ready(function () {
+  $(".autoplay1").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    prevArrow:
+      "<button type='button' class='custom-slick-pre'><i class='ti-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:
+      "<button type='button' class='custom-slick-next'><i class='ti-angle-right' aria-hidden='true'></i></button>",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
