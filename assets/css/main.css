@@ -292,6 +292,7 @@
     transition: .3s;
     opacity: 0;
     cursor: pointer;
+    border: .2rem solid #fff;
 }
 
 .slider-icon-next {
@@ -828,22 +829,43 @@
 .featured-course-price {
     position: absolute;
     right: 4rem;
-    bottom: 21.5rem;
+    top: 2%;
+    left: 2%;
+    z-index: 90;
+}
+.featured-course-bookmark {
+    position: absolute;
+    right: 4rem;
+    top: 2%;
+    right: 2%;
     z-index: 90;
 }
 
-.featured-course-price > span {
+.featured-course-bookmark > span {
     font-size: 1.4rem;
-    color: #07294d;
     font-weight: 600;
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    background-color: var(--main-color-second);
+    width: 2rem;
+    height: 2.5rem;
+    background-color: #fff;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: .2rem;
+}
+
+.featured-course-price > span {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 600;
+    width: 7rem;
+    height: 3rem;
+    background-color: var(--main-color-first);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .2rem;
 }
 
 
@@ -883,7 +905,7 @@
 
 .slide-riview-rate-review {
     font-size: 1.4rem;
-    color: #212529;
+    color: #939bb3;
     font-weight: 500;
     position: relative;
     margin-left: .8rem;
@@ -899,38 +921,76 @@
 .featured-contents-slide-riview-top > h4  {
     margin: 0;
     padding-top: 1.7rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
     margin-bottom: 0;
     font-weight: 700;
     font-size: 2.2rem;
     line-height: 2.7rem;
 }
 
-.featured-contents-slide-riview-bottom {
+.featured-contents-slide-riview-middle {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     padding-bottom: 2.2rem;
-    border-top: .1rem solid #e0e0e0;
+   
 }
 
-.riview-bottom-img > img{
+.featured-cost {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.featured-contents-slide-riview-bottom {
+    border-top: .1rem solid #e0e0e0;
+    padding-top: 1rem;
+}
+
+.featured-contents-slide-riview-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.featured-buy > span {
+    color: #9b9b9b;
+    font-weight: 500;
+}
+
+.featured-buy > a > i {
+    color: var(--main-color-second);
+    margin-right: .5rem;
+}
+
+.featured-buy > a {
+    font-size: 1.6rem;
+    color: #9b9b9b;
+}
+.featured-buy {
+    display: flex;
+    align-items: center;
+}
+.riview-middle-img > img{
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
     margin-right: 1rem;
 }
 
-.riview-bottom-img {
+.riview-middle-img {
     display: flex;
     align-items: center;
 }
 
-.riview-bottom-img-name > a{
+.riview-middle-img-name > span > a{
     font-size: 1.6rem;
     font-weight: 400;
-    color: var(--main-color-first);
+    color: #4c5a81;
+}
+.riview-middle-img-name > .sub {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #b8bfce;
 }
 
 .riview-bottom-admin {
@@ -944,6 +1004,16 @@
     font-weight: 500;
     text-transform: uppercase;
     color: #8a8a8a;
+}
+
+.featured-user-duration > span{
+    font-size: 1.6rem;
+    color: #acacac;
+    margin-right: .5rem;
+}
+
+.featured-user-duration > span > i {
+    margin-right: .3rem;
 }
 
 
@@ -1008,6 +1078,12 @@
     height: 3.8rem;
     width: 3.8rem;
     border-radius: 5rem;
+    transition: .3s;
+}
+
+.custom-slick-pre:hover {
+    color: #fff;
+    background-color: var(--main-color-second);
 }
 
 .custom-slick-next {
@@ -1026,6 +1102,11 @@
     height: 3.8rem;
     width: 3.8rem;
     border-radius: 5rem;
+    transition: .3s;
+}
+.custom-slick-next:hover {
+    color: #fff;
+    background-color: var(--main-color-second);
 }
 
 .set-bg-color1 {
@@ -1049,7 +1130,7 @@
 }
 
 
-.custom-slick-pre-coures {
+.custom-slick-pre-course {
     right: 6rem;
     font-size: 1.8rem;
     line-height: 0;
@@ -1065,6 +1146,12 @@
     border: .2rem solid #aaa;
     background: none;
     border-radius: .3rem;
+    transition: .3s;
+}
+
+.custom-slick-pre-course:hover {
+    border-color: var(--main-color-second);
+    background-color: var(--main-color-second);
 }
 
 .custom-slick-next-course {
@@ -1083,4 +1170,10 @@
     border: .2rem solid #aaa;
     background: none;
     border-radius: .3rem;
+    transition: .3s;
+}
+
+.custom-slick-next-course:hover {
+    border-color: var(--main-color-second);
+    background-color: var(--main-color-second);
 }

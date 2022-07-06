@@ -67,6 +67,137 @@ prePreSlide.addEventListener("click", () => {
   }, 1000);
 });
 
+function App() {
+  getData(renderData);
+}
+
+App();
+
+function getData(callBack) {
+  fetch("https://60d4611a61160900173cb070.mockapi.io/courses", {
+    method: "GET",
+  })
+    .then((response) => response.json())
+    .then(callBack);
+}
+
+function renderData(dataResult) {
+  console.log(dataResult);
+  const exportData = dataResult.map((dataResult) => {
+    return `  
+    <div class="featured-contents-slides-content">
+    <div class="featured-contents-slide">
+    <div class="featured-course-price">
+        <span>Beginner</span>
+    </div>
+    <div class="featured-course-bookmark">
+        <span><i class="fa-regular fa-bookmark"></i></span>
+    </div>
+    <div class="featured-contents-slide-img">
+        <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2021/08/CU2436.jpg"
+            alt="">
+    </div>
+    <div class="featured-contents-slide-riview">
+        <div class="featured-contents-slide-riview-top">
+            <div class="slide-riview-rate">
+                <div class="slide-riview-rate-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="slide-riview-rate-review">
+                    <span>3.60</span>
+                    <span>(5)</span>
+
+                </div>
+            </div>
+            <h4>
+                <a href="">Full Stack Web Development Tutorial</a>
+            </h4>
+
+            <div class="featured-user-duration">
+                <span> <i class="ti-user"></i>173</span>
+                <span><i class="ti-time"></i>5h 20m</span>
+            </div>
+
+        </div>
+        <div class="featured-contents-slide-riview-middle">
+            <div class="riview-middle-img">
+                <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/03/t-3-1-5-100x100.jpg"
+                    alt="">
+                <div class="riview-middle-img-name">
+                    <span class="sub">by</span>
+                    <span><a href="">Tom Hardy</a></span>
+                    <span class="sub">in</span>
+                    <span><a href="">Languages</a></span>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="featured-contents-slide-riview-bottom">
+            <div class="featured-cost">
+                <p>Free</p>
+            </div>
+            <div class="featured-buy">
+                <a href=""><i class="fa-solid fa-cart-shopping"></i>Get
+                    Enrolled</a href="">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    `;
+  });
+  const renderArea = document.querySelector("");
+  // renderArea.innerHTML += exportData.join("");
+}
+
+$(document).ready(function () {
+  $(".autoplay1").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    prevArrow:
+      "<button type='button' class='custom-slick-pre-course'><i class='ti-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:
+      "<button type='button' class='custom-slick-next-course'><i class='ti-angle-right' aria-hidden='true'></i></button>",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
+
 $(document).ready(function () {
   $(".autoplay").slick({
     slidesToShow: 3,
@@ -109,44 +240,71 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $(".autoplay1").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: false,
-    prevArrow:
-      "<button type='button' class='custom-slick-pre-coures'><i class='ti-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:
-      "<button type='button' class='custom-slick-next-course'><i class='ti-angle-right' aria-hidden='true'></i></button>",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 550,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  });
-});
+`
+<div class="featured-contents-slides-content">
+<div class="featured-contents-slide">
+    <div class="featured-course-price">
+        <span>Beginner</span>
+    </div>
+    <div class="featured-course-bookmark">
+        <span><i class="fa-regular fa-bookmark"></i></span>
+    </div>
+    <div class="featured-contents-slide-img">
+        <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2021/08/CU2436.jpg"
+            alt="">
+    </div>
+    <div class="featured-contents-slide-riview">
+        <div class="featured-contents-slide-riview-top">
+            <div class="slide-riview-rate">
+                <div class="slide-riview-rate-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="slide-riview-rate-review">
+                    <span>3.60</span>
+                    <span>(5)</span>
+
+                </div>
+            </div>
+            <h4>
+                <a href="">Full Stack Web Development Tutorial</a>
+            </h4>
+
+            <div class="featured-user-duration">
+                <span> <i class="ti-user"></i>173</span>
+                <span><i class="ti-time"></i>5h 20m</span>
+            </div>
+
+        </div>
+        <div class="featured-contents-slide-riview-middle">
+            <div class="riview-middle-img">
+                <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/03/t-3-1-5-100x100.jpg"
+                    alt="">
+                <div class="riview-middle-img-name">
+                    <span class="sub">by</span>
+                    <span><a href="">Tom Hardy</a></span>
+                    <span class="sub">in</span>
+                    <span><a href="">Languages</a></span>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="featured-contents-slide-riview-bottom">
+            <div class="featured-cost">
+                <p>Free</p>
+            </div>
+            <div class="featured-buy">
+                <a href=""><i class="fa-solid fa-cart-shopping"></i>Get
+                    Enrolled</a href="">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+`;

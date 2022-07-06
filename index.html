@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="./assets/slicks/slicks/slick.css">
     <link rel="stylesheet" href="./assets/slicks/slicks/slick-theme.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 
 <body>
@@ -352,11 +352,11 @@
                         </div>
                     </div>
                     <div class="slider-pre-next">
-                        <div class="slider-icon-pre">
-                            <i class="ti-angle-left" id="pre-slide"></i>
+                        <div class="slider-icon-pre" id="pre-slide">
+                            <i class="ti-angle-left"></i>
                         </div>
-                        <div class="slider-icon-next">
-                            <i class="ti-angle-right" id="next-slide"></i>
+                        <div class="slider-icon-next" id="next-slide">
+                            <i class="ti-angle-right"></i>
                         </div>
                     </div>
                 </div>
@@ -583,11 +583,14 @@
                                         </div>
                                     </div>
                                     <div class="featured-contents-slides">
-                                        <div class="featured-contents-slides-container autoplay1">
+                                        <div class="featured-contents-slides-container autoplay1 " id="a1">
                                             <div class="featured-contents-slides-content">
                                                 <div class="featured-contents-slide">
                                                     <div class="featured-course-price">
-                                                        <span>$59</span>
+                                                        <span>Beginner</span>
+                                                    </div>
+                                                    <div class="featured-course-bookmark">
+                                                        <span><i class="fa-regular fa-bookmark"></i></span>
                                                     </div>
                                                     <div class="featured-contents-slide-img">
                                                         <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2021/08/CU2436.jpg"
@@ -604,37 +607,57 @@
                                                                     <i class="fa-solid fa-star"></i>
                                                                 </div>
                                                                 <div class="slide-riview-rate-review">
-                                                                    <span> ( 1 Review )</span>
+                                                                    <span>3.60</span>
+                                                                    <span>(5)</span>
+
                                                                 </div>
                                                             </div>
                                                             <h4>
                                                                 <a href="">Full Stack Web Development Tutorial</a>
                                                             </h4>
 
+                                                            <div class="featured-user-duration">
+                                                                <span> <i class="ti-user"></i>173</span>
+                                                                <span><i class="ti-time"></i>5h 20m</span>
+                                                            </div>
+
                                                         </div>
-                                                        <div class="featured-contents-slide-riview-bottom">
-                                                            <div class="riview-bottom-img">
+                                                        <div class="featured-contents-slide-riview-middle">
+                                                            <div class="riview-middle-img">
                                                                 <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/03/t-3-1-5-100x100.jpg"
                                                                     alt="">
-                                                                <div class="riview-bottom-img-name">
-                                                                    <a href="">Tom Hardy</a>
+                                                                <div class="riview-middle-img-name">
+                                                                    <span class="sub">by</span>
+                                                                    <span><a href="">Tom Hardy</a></span>
+                                                                    <span class="sub">in</span>
+                                                                    <span><a href="">Languages</a></span>
+
                                                                 </div>
                                                             </div>
-                                                            <div class="riview-bottom-admin">
-                                                                <span>
-                                                                    <i class="ti-user"></i>
-                                                                    <span>1</span>
-                                                                </span>
+
+                                                        </div>
+
+                                                        <div class="featured-contents-slide-riview-bottom">
+                                                            <div class="featured-cost">
+                                                                <p>Free</p>
+                                                            </div>
+                                                            <div class="featured-buy">
+                                                                <a href=""><i class="fa-solid fa-cart-shopping"></i>Get
+                                                                    Enrolled</a href="">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
 
                                             <div class="featured-contents-slides-content">
                                                 <div class="featured-contents-slide">
                                                     <div class="featured-course-price">
-                                                        <span>$59</span>
+                                                        <span>Beginner</span>
+                                                    </div>
+                                                    <div class="featured-course-bookmark">
+                                                        <span><i class="fa-regular fa-bookmark"></i></span>
                                                     </div>
                                                     <div class="featured-contents-slide-img">
                                                         <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2021/08/CU2436.jpg"
@@ -651,37 +674,57 @@
                                                                     <i class="fa-solid fa-star"></i>
                                                                 </div>
                                                                 <div class="slide-riview-rate-review">
-                                                                    <span> ( 1 Review )</span>
+                                                                    <span>3.60</span>
+                                                                    <span>(5)</span>
+
                                                                 </div>
                                                             </div>
                                                             <h4>
                                                                 <a href="">Full Stack Web Development Tutorial</a>
                                                             </h4>
 
+                                                            <div class="featured-user-duration">
+                                                                <span> <i class="ti-user"></i>173</span>
+                                                                <span><i class="ti-time"></i>5h 20m</span>
+                                                            </div>
+
                                                         </div>
-                                                        <div class="featured-contents-slide-riview-bottom">
-                                                            <div class="riview-bottom-img">
+                                                        <div class="featured-contents-slide-riview-middle">
+                                                            <div class="riview-middle-img">
                                                                 <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/03/t-3-1-5-100x100.jpg"
                                                                     alt="">
-                                                                <div class="riview-bottom-img-name">
-                                                                    <a href="">Tom Hardy</a>
+                                                                <div class="riview-middle-img-name">
+                                                                    <span class="sub">by</span>
+                                                                    <span><a href="">Tom Hardy</a></span>
+                                                                    <span class="sub">in</span>
+                                                                    <span><a href="">Languages</a></span>
+
                                                                 </div>
                                                             </div>
-                                                            <div class="riview-bottom-admin">
-                                                                <span>
-                                                                    <i class="ti-user"></i>
-                                                                    <span>1</span>
-                                                                </span>
+
+                                                        </div>
+
+                                                        <div class="featured-contents-slide-riview-bottom">
+                                                            <div class="featured-cost">
+                                                                <p>Free</p>
+                                                            </div>
+                                                            <div class="featured-buy">
+                                                                <a href=""><i class="fa-solid fa-cart-shopping"></i>Get
+                                                                    Enrolled</a href="">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
 
                                             <div class="featured-contents-slides-content">
                                                 <div class="featured-contents-slide">
                                                     <div class="featured-course-price">
-                                                        <span>$59</span>
+                                                        <span>Beginner</span>
+                                                    </div>
+                                                    <div class="featured-course-bookmark">
+                                                        <span><i class="fa-regular fa-bookmark"></i></span>
                                                     </div>
                                                     <div class="featured-contents-slide-img">
                                                         <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2021/08/CU2436.jpg"
@@ -698,37 +741,57 @@
                                                                     <i class="fa-solid fa-star"></i>
                                                                 </div>
                                                                 <div class="slide-riview-rate-review">
-                                                                    <span> ( 1 Review )</span>
+                                                                    <span>3.60</span>
+                                                                    <span>(5)</span>
+
                                                                 </div>
                                                             </div>
                                                             <h4>
                                                                 <a href="">Full Stack Web Development Tutorial</a>
                                                             </h4>
 
+                                                            <div class="featured-user-duration">
+                                                                <span> <i class="ti-user"></i>173</span>
+                                                                <span><i class="ti-time"></i>5h 20m</span>
+                                                            </div>
+
                                                         </div>
-                                                        <div class="featured-contents-slide-riview-bottom">
-                                                            <div class="riview-bottom-img">
+                                                        <div class="featured-contents-slide-riview-middle">
+                                                            <div class="riview-middle-img">
                                                                 <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/03/t-3-1-5-100x100.jpg"
                                                                     alt="">
-                                                                <div class="riview-bottom-img-name">
-                                                                    <a href="">Tom Hardy</a>
+                                                                <div class="riview-middle-img-name">
+                                                                    <span class="sub">by</span>
+                                                                    <span><a href="">Tom Hardy</a></span>
+                                                                    <span class="sub">in</span>
+                                                                    <span><a href="">Languages</a></span>
+
                                                                 </div>
                                                             </div>
-                                                            <div class="riview-bottom-admin">
-                                                                <span>
-                                                                    <i class="ti-user"></i>
-                                                                    <span>1</span>
-                                                                </span>
+
+                                                        </div>
+
+                                                        <div class="featured-contents-slide-riview-bottom">
+                                                            <div class="featured-cost">
+                                                                <p>Free</p>
+                                                            </div>
+                                                            <div class="featured-buy">
+                                                                <a href=""><i class="fa-solid fa-cart-shopping"></i>Get
+                                                                    Enrolled</a href="">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
 
                                             <div class="featured-contents-slides-content">
                                                 <div class="featured-contents-slide">
                                                     <div class="featured-course-price">
-                                                        <span>$59</span>
+                                                        <span>Beginner</span>
+                                                    </div>
+                                                    <div class="featured-course-bookmark">
+                                                        <span><i class="fa-regular fa-bookmark"></i></span>
                                                     </div>
                                                     <div class="featured-contents-slide-img">
                                                         <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2021/08/CU2436.jpg"
@@ -745,31 +808,48 @@
                                                                     <i class="fa-solid fa-star"></i>
                                                                 </div>
                                                                 <div class="slide-riview-rate-review">
-                                                                    <span> ( 1 Review )</span>
+                                                                    <span>3.60</span>
+                                                                    <span>(5)</span>
+
                                                                 </div>
                                                             </div>
                                                             <h4>
                                                                 <a href="">Full Stack Web Development Tutorial</a>
                                                             </h4>
 
+                                                            <div class="featured-user-duration">
+                                                                <span> <i class="ti-user"></i>173</span>
+                                                                <span><i class="ti-time"></i>5h 20m</span>
+                                                            </div>
+
                                                         </div>
-                                                        <div class="featured-contents-slide-riview-bottom">
-                                                            <div class="riview-bottom-img">
+                                                        <div class="featured-contents-slide-riview-middle">
+                                                            <div class="riview-middle-img">
                                                                 <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/03/t-3-1-5-100x100.jpg"
                                                                     alt="">
-                                                                <div class="riview-bottom-img-name">
-                                                                    <a href="">Tom Hardy</a>
+                                                                <div class="riview-middle-img-name">
+                                                                    <span class="sub">by</span>
+                                                                    <span><a href="">Tom Hardy</a></span>
+                                                                    <span class="sub">in</span>
+                                                                    <span><a href="">Languages</a></span>
+
                                                                 </div>
                                                             </div>
-                                                            <div class="riview-bottom-admin">
-                                                                <span>
-                                                                    <i class="ti-user"></i>
-                                                                    <span>1</span>
-                                                                </span>
+
+                                                        </div>
+
+                                                        <div class="featured-contents-slide-riview-bottom">
+                                                            <div class="featured-cost">
+                                                                <p>Free</p>
+                                                            </div>
+                                                            <div class="featured-buy">
+                                                                <a href=""><i class="fa-solid fa-cart-shopping"></i>Get
+                                                                    Enrolled</a href="">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -784,6 +864,7 @@
 </body>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="./assets/slicks/slicks/slick.min.js"></script>
 <script src="./js/animation.js"></script>
 <script src="./js/wow.min.js"></script>
@@ -798,6 +879,15 @@
         }
     )
     wow.init();
+
+    var slider = tns({
+        "container": ".mouse-drag",
+        "items": 3,
+        "mouseDrag": true,
+        "slideBy": "page",
+        "swipeAngle": false,
+        "speed": 400
+    });
 </script>
 
 <script src="./js/app.js"></script>
