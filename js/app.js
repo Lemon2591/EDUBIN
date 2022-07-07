@@ -78,7 +78,11 @@ function getData(callBack) {
     method: "GET",
   })
     .then((response) => response.json())
-    .then(callBack);
+    .then(callBack)
+    .catch((err) => {
+      console.log(err);
+    })
+    .finally(console.log("Data Success !"));
 }
 
 function renderData(dataResult) {
@@ -158,7 +162,7 @@ function renderData(dataResult) {
   });
   const renderArea = document.getElementById("a1");
   renderArea.innerHTML += exportData.join("");
-  // $(document).ready(function () {
+
   $(".autoplay1").slick({
     slidesToShow: 3,
     slidesToScroll: 1,

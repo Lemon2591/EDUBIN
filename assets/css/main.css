@@ -1143,6 +1143,175 @@
     background: #fff;
     padding: 10px;
 }
+
+.teacher-container {
+    padding: 10rem 0 9rem 0;
+}
+
+.teacher-content {
+        display: flex;
+        max-width: 114rem;
+        margin-right: auto;
+        margin-left: auto;
+}
+
+.teacher-content-left-bottom {
+    margin-top: 6.5rem;
+}
+
+.teacher-content-left-bottom > a {
+    font-family: "Montserrat",Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    fill: #07294d;
+    color: #07294d;
+    background-color: #ffc600;
+    padding: 1.7rem 3rem;
+    border-radius: .3rem;
+    transition: .3s;
+}
+
+.teacher-content-left-bottom > a:hover {
+    color: #fff;
+    background-color: var(--main-color-first);
+}
+
+.teacher-content-left {
+    width: 50%;
+    padding-right: 7.5rem;
+}
+
+.teacher-content-right {
+    width: 50%;
+}
+
+.teacher-content-left-top > p{
+    font-family: "Montserrat",Sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    margin: 0.5rem 0;
+    line-height: 3rem;
+}
+
+.teacher-content-left-top > span {
+    display: inline-block;
+    height: 0.3rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.3rem;
+    position: relative;
+    width: 4.2rem;
+    background: var(--main-color-second);
+}
+
+.teacher-content-left-top > h2 {
+    font-family: "Montserrat",Sans-serif;
+    display: block;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.8rem;
+    margin: 0;
+    padding-bottom: 1rem;
+    color: #23252a;
+}
+
+.teacher-content-left-middle > p {
+    margin-bottom: 2.6rem;
+    font-size: 1.6rem;
+    color: rgb(120, 122, 122);
+    line-height: 2.6rem;
+    font-weight: 400;
+}
+
+.teacher-content-right-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teacher-content-right-content {
+    position: relative;
+    flex: 0 0 50%;
+    max-width: 50%;
+    transition: .5s;
+}
+
+.teacher-content-right-img {
+    overflow: hidden;
+    border-radius: .3rem;
+    min-height: .1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.teacher-content-right-img > a > img {
+    width: 100%;
+    height: 30.5rem;
+    object-fit: cover;
+}
+
+.teacher-content-right-img-info {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    right: 0;
+    width: 70%;
+    background-color: #f9f9f9;
+    border-radius: .3rem;
+    margin: 0 auto;
+    padding: 0;
+    height: 7.5rem;
+    overflow: hidden;
+    transition: .3s;
+}
+.teacher-content-area > a {
+    color: var(--main-color-first);
+    font-size: 1.8rem;
+    font-weight: 700!important;
+    margin: 0 0 .5rem 0;
+    padding: 0;
+    line-height: 2.2rem;
+    transition: .3s;
+}
+
+.teacher-content-area > a:hover {
+    color: var(--main-color-second);
+}
+.teacher-content-area {
+    position: relative;
+    text-align: center;
+    bottom: -1.8rem;
+}
+.teacher-content-area  > div > span {
+    display: block;
+    font-size: 1.5rem;
+    color: #8a8a8a;
+    padding: .5rem 0 .5rem 0;
+}
+
+.techer-social {
+    padding-top: 1rem;
+}
+
+.techer-social > a {
+    color: #07294d;
+    padding: 0 .5rem;
+    font-size: 1.6rem;
+    transition: .3s;
+}
+
+.techer-social > a:hover {
+    color: var(--main-color-second);
+}
+
+.teacher-content-right-content:hover > .teacher-content-right-img-info{
+    height: 11rem;
+    transition: .5s;
+}
+
+
+
 @keyframes nav-animation {
     from {
         transform: translateY(-8.5rem);
@@ -1191,6 +1360,15 @@
 
     to {
         opacity: 1;
+    }
+}
+
+@keyframes hoverTeacher {
+    from {
+        height: 7.5rem;
+    }
+    to {
+        height: 11rem;
     }
 }
 
