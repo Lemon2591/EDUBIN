@@ -1366,7 +1366,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 70rem;
+    height: auto;
     position: relative;
 }
 
@@ -1626,6 +1626,77 @@
 .book-content-btn>a:hover {
     color: #fff;
     background-color: #07294d;
+}
+
+.news-content-slides-container {
+    display: flex;
+}
+
+.news-content-slides-content {
+    width: calc(100%/3);
+    margin: 0 1.5rem;
+}
+
+.news-content-all {
+    max-width: 114rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 9rem 0 7rem 0;
+}
+
+.news-content-slides-container {
+    margin: 0 !important;
+}
+
+.news-slide-img>img {
+    object-fit: cover;
+}
+
+.news-slide-img {
+    height: 21rem !important;
+}
+
+.news-slide-img>img {
+    height: 21rem !important;
+}
+
+.news-post {
+    margin-top: 2rem;
+}
+
+.news-post-author {
+    padding-bottom: 1.5rem;
+}
+
+.news-post-author>a {
+    color: #8a8a8a;
+    font-size: 1.4rem;
+    padding-right: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-right: 3rem;
+}
+
+.news-post-author>a>i {
+    color: var(--main-color-second);
+    font-size: 1.4rem;
+    padding-right: 1rem;
+}
+
+.news-post-title>a>h3 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    color: rgb(7, 41, 77);
+    padding-top: 0;
+    padding-bottom: 2rem;
+    margin: 0;
+}
+
+.news-post-content>p {
+    color: #505050;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 300;
 }
 
 @keyframes book {
