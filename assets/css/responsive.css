@@ -590,6 +590,25 @@
         padding: 4rem 0 4rem 0;
     }
 
+    .book-content-slides-content {
+        display: block;
+    }
+
+    .book-content-slide {
+        width: 100%;
+    }
+
+    .book-content-header {
+        flex-wrap: wrap;
+    }
+
+    .book-content-slides {
+        padding-top: 7rem;
+    }
+
+    .book-content-header {
+        padding-left: 2rem;
+    }
 }
 
 
