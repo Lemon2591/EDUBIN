@@ -246,6 +246,47 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $(".autoplay3").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+    dots: true,
+    appendDots: $(".slick-slider-dots"),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
+
 const btnPlay = document.getElementById("btn-play");
 const video = document.getElementById("iframe-video");
 
