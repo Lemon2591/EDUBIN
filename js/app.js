@@ -253,12 +253,11 @@ $(document).ready(function () {
     autoplay: true,
     arrows: false,
     dots: true,
-    appendDots: $(".slick-slider-dots"),
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },

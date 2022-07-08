@@ -1,4 +1,4 @@
-:root{
+:root {
     --white-color: #fff;
     --back-color: #000;
     --text-color: #333;
@@ -9,22 +9,21 @@
 
 
 }
-*{
+
+* {
     box-sizing: inherit;
 }
 
-html{
+html {
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: "Roboto", sans-serif;
     color: #313f5f;
     box-sizing: border-box;
-    
+
 }
 
 
 a {
     text-decoration: none !important;
 }
-
-
