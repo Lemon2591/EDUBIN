@@ -1699,6 +1699,35 @@
     font-weight: 300;
 }
 
+.partner-slide>a>img {
+    width: 14.8rem;
+    height: 14.8rem;
+}
+
+
+.partner-content {}
+
+.partner-content-slides {
+    max-width: 114rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5.5rem 0 6rem 0;
+}
+
+.partner-slides-container {
+    display: flex;
+}
+
+.partner-slide {
+    width: calc(100%/5);
+}
+
+.partner-slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
 @keyframes book {
     from {
         opacity: 0;

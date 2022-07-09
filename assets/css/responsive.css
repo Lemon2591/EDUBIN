@@ -662,6 +662,15 @@
     .news-content-slides-content {
         margin: 0;
     }
+
+    .featured-contents-slide {
+        width: 100%;
+    }
+
+    .featured-contents-slides-content {
+        margin: 0;
+        padding: 0 2rem;
+    }
 }
 
 
