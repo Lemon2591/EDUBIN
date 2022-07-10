@@ -67,6 +67,45 @@ prePreSlide.addEventListener("click", () => {
   }, 1000);
 });
 
+const scrollPage = document.getElementById("scroll");
+window.addEventListener("scroll", () => {
+  let scrollLenghtY = window.scrollY;
+  if (scrollLenghtY > 165) {
+    scrollPage.style.opacity = "1";
+    scrollPage.style.zIndex = "999999";
+  } else {
+    if (scrollLenghtY <= 165) {
+      scrollPage.style.opacity = "0";
+      scrollPage.style.zIndex = "-999";
+    }
+  }
+});
+
+const searchBtn = document.getElementById("search-btn");
+const formSearch = document.getElementById("search");
+const closeSearch = document.getElementById("close-search");
+
+searchBtn.addEventListener("click", () => {
+  formSearch.style.opacity = "1";
+  formSearch.style.zIndex = "9999999";
+});
+
+closeSearch.addEventListener("click", () => {
+  formSearch.style.opacity = "0";
+  formSearch.style.zIndex = "-999";
+});
+
+const btnPlay = document.getElementById("btn-play");
+const video = document.getElementById("iframe-video");
+
+btnPlay.addEventListener("click", () => {
+  video.classList.add("show-video");
+});
+
+video.addEventListener("click", () => {
+  video.classList.remove("show-video");
+});
+
 function App() {
   getData(renderData);
 }
@@ -284,17 +323,6 @@ $(document).ready(function () {
       },
     ],
   });
-});
-
-const btnPlay = document.getElementById("btn-play");
-const video = document.getElementById("iframe-video");
-
-btnPlay.addEventListener("click", () => {
-  video.classList.add("show-video");
-});
-
-video.addEventListener("click", () => {
-  video.classList.remove("show-video");
 });
 
 $(document).ready(function () {

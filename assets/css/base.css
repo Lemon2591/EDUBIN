@@ -20,7 +20,7 @@ html {
     font-family: "Roboto", sans-serif;
     color: #313f5f;
     box-sizing: border-box;
-
+    scroll-behavior: smooth;
 }
 
 

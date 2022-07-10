@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edubin - LMS Education</title>
+
     <link rel="shortcut icon" type="image/png" href="./assets/img/site-favicon.png" />
     <link rel="stylesheet" href="./assets/rscss/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -33,9 +34,32 @@
 </head>
 
 <body>
-    <div class="app">
-        <div class="main">
-            <div class="header">
+    <div class="app" id="app">
+        <div class="main" id="main">
+
+            <div class="scroll-up" id="scroll">
+                <div class="scroll-up-container">
+                    <a href="#main"> <i class="ti-angle-up"></i></a>
+                </div>
+            </div>
+
+            <div class="search" id="search">
+                <div class="search-container">
+                    <div class="search-content">
+                        <div class="search-close">
+                            <i class="ti-close" id="close-search"></i>
+                        </div>
+                        <form>
+                            <input type="text" placeholder="Search Here..">
+                            <button>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header" id="header">
                 <div class="header-top" id="header-top">
                     <div class="header-top-container">
                         <div class="header-top-right">
@@ -220,7 +244,7 @@
                             <div class="header-right">
                                 <ul>
                                     <li>
-                                        <a href="">
+                                        <a href="#" id="search-btn">
                                             <i class="fa-solid fa-magnifying-glass"></i>
                                         </a>
                                     </li>
@@ -607,7 +631,9 @@
                             <div class="video-element">
                                 <div class="video-content-center">
                                     <div class="video-icon-play">
-                                        <i class="fa-solid fa-play" id="btn-play"></i>
+                                        <div class="btn-animation">
+                                            <i class="fa-solid fa-play" id="btn-play"></i>
+                                        </div>
                                     </div>
                                     <div class="video-text">
                                         <div class="video-text-content">
@@ -1143,8 +1169,6 @@
                 </div>
             </div>
 
-
-
             <div class="footer">
                 <div class="footeer-container">
                     <div class="footer-content">
@@ -1286,7 +1310,36 @@
                 </div>
             </div>
 
-
+            <div class="sub-footer">
+                <div class="sub-footer-container">
+                    <div class="sub-footer-content">
+                        <div class="sub-footer-all">
+                            <div class="sub-footer-license">
+                                <p>© 2022 Pixelcurve. All rights reserved.</p>
+                            </div>
+                            <div class="sub-footer-menu">
+                                <ul>
+                                    <li>
+                                        <a href="">Language</a>
+                                    </li>
+                                    <li>
+                                        <a href="">WordPress</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Privacy</a>
+                                    </li>
+                                    <li>
+                                        <a href="">FAQs</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </div>
