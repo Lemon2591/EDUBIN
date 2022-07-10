@@ -129,6 +129,7 @@
 }
 
 .register-err {
+    display: none;
     color: red;
     font-weight: 400 !important;
     font-size: 1rem !important;
