@@ -74,6 +74,7 @@
 }
 
 .register-form-bg {
+    position: relative;
     padding: 10rem 5rem 12rem 5rem;
     background-color: #fff;
     border-radius: .8rem;

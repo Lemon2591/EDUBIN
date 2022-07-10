@@ -345,6 +345,10 @@
         margin-right: auto !important;
         margin-left: auto !important;
     }
+
+    .register-btn {
+        right: 5% !important;
+    }
 }
 
 
@@ -768,6 +772,10 @@
 
     .register-form-content {
         padding: 0 !important;
+    }
+
+    .register-btn {
+        right: 6% !important;
     }
 }
 
