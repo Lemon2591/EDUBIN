@@ -106,21 +106,21 @@
     font-weight: 500;
 }
 
-.register-form-group-btn {
-    float: right;
-}
+.register-form-group-btn {}
 
 .register-btn {
+    position: absolute;
     color: #edf0f2;
     font-size: 1.6rem;
-    margin: 0 2rem 3.5rem 2rem;
+    margin: 2rem 2rem 3.5rem 2rem;
     background-color: var(--main-color-first);
     padding: 1.5rem 2.8rem;
     border: none;
     border-radius: .5rem;
-    left: 0;
     cursor: pointer;
     transition: .3s;
+    right: 4%;
+
 }
 
 .register-btn:hover {
