@@ -33,3 +33,24 @@ ul {
     padding: 0;
     margin: 0;
 }
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bbb;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #bbb;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #bbb;
+}
+
+input:focus {
+    transition: .5s;
+}

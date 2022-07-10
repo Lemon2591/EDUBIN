@@ -339,6 +339,12 @@
         width: 50% !important;
         margin-bottom: 3rem !important;
     }
+
+    .register-header-text {
+        max-width: 70rem !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
 }
 
 
@@ -743,6 +749,25 @@
 
     .slider-pre-next {
         top: 60%;
+    }
+
+    .register-header-text {
+        max-width: 30rem !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .register-form-group {
+        display: block !important;
+    }
+
+    .register-group {
+        width: 100% !important;
+        margin: 2rem 0 !important;
+    }
+
+    .register-form-content {
+        padding: 0 !important;
     }
 }
 

@@ -80,7 +80,7 @@ window.addEventListener("scroll", () => {
     }
   }
 });
-
+console.log("okokokoo");
 const searchBtn = document.getElementById("search-btn");
 const formSearch = document.getElementById("search");
 const closeSearch = document.getElementById("close-search");
