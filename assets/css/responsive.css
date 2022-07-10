@@ -679,6 +679,35 @@
     .featured-content-top {
         margin: 0 1rem;
     }
+
+    .footer-col-content {
+        display: block;
+    }
+
+    .footer-info,
+    .footer-feature-link,
+    .footer-support,
+    .footer-contact {
+        width: 100% !important;
+        margin-bottom: 3rem !important;
+    }
+
+    .footer-contact {
+        margin-bottom: 0;
+    }
+
+    .footer-feature-link-router>ul {
+        width: 50%;
+    }
+
+    .footer-feature-link-router>ul>li {
+        width: 100%;
+    }
+
+    .book-content-header {
+        display: block;
+    }
+
 }
 
 
