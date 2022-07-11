@@ -59,6 +59,14 @@ closeSearch.addEventListener("click", () => {
   formSearch.style.zIndex = "-999";
 });
 
+const loadPage = document.getElementById("load-page");
+const main = document.getElementById("main");
+setTimeout(() => {
+  loadPage.style.opacity = "0";
+  loadPage.style.zIndex = "-99999";
+  main.classList.remove("sub-main");
+}, 1200);
+
 const btnPlay = document.getElementById("btn-play");
 const video = document.getElementById("iframe-video");
 
