@@ -118,3 +118,27 @@ getConfirmPass.addEventListener("blur", () => {
     }
   }
 });
+
+const btnSubmit = document.getElementById("register-btn");
+const inPuts = document.querySelectorAll(".input");
+const err = document.querySelectorAll(".register-err");
+console.log(inPuts);
+console.log(err);
+
+btnSubmit.addEventListener("click", (e) => {
+  e.preventDefault();
+  let isOk = true;
+  for (let inPut = 0; inPut <= 5; inPut++) {
+    if (inPuts[inPut].value === "") {
+      isOk = false;
+      err[inPut].style.display = "block";
+      inPuts[inPut].style.borderColor = "red";
+    }
+  }
+  if (isOk) {
+    alert("Successfully Register !");
+    for (let fill = 0; fill <= 5; fill++) {
+      inPuts[fill].value = "";
+    }
+  }
+});

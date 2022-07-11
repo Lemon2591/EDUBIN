@@ -65,7 +65,7 @@ setTimeout(() => {
   loadPage.style.opacity = "0";
   loadPage.style.zIndex = "-99999";
   main.classList.remove("sub-main");
-}, 500);
+}, 800);
 
 const btnPlay = document.getElementById("btn-play");
 const video = document.getElementById("iframe-video");
