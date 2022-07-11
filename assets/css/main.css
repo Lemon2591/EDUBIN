@@ -406,6 +406,7 @@
     font-size: 6rem;
     line-height: 7.2rem;
     margin-bottom: 2.5rem;
+    animation: slider-title 3s ease;
 }
 
 .slider-content-text {
@@ -419,11 +420,13 @@
     line-height: 2.6rem;
     margin-bottom: 3rem;
     margin-top: 0;
+    animation: slider-content 3s ease;
 }
 
 .slider-content-button {
     position: relative;
     display: block;
+    animation: button-box 3s ease;
 }
 
 .content-all {
@@ -2152,6 +2155,44 @@
         transform: scale(0.8);
         background: rgb(254, 188, 141);
         border: 1rem solid seashell;
+    }
+}
+
+
+
+@keyframes slider-title {
+    from {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slider-content {
+    from {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes button-box {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0);
     }
 }
 
