@@ -122,8 +122,6 @@ getConfirmPass.addEventListener("blur", () => {
 const btnSubmit = document.getElementById("register-btn");
 const inPuts = document.querySelectorAll(".input");
 const err = document.querySelectorAll(".register-err");
-console.log(inPuts);
-console.log(err);
 
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
